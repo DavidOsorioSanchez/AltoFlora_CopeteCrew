@@ -7,6 +7,7 @@ export default function Home() {
 
   const [counter, seCounter] = useState(0);
   const [alert, setAlert] = useState(false);
+  const [userlogin, setUserlogin] = useState({});
 
   const HandleClick = async() => {
     seCounter(counter + 1);
@@ -20,8 +21,9 @@ export default function Home() {
     }
   }, [counter])
 
+ 
 
-
+  /*
   useEffect(() => {
     datosApi();
     datosApi2();
@@ -41,7 +43,22 @@ export default function Home() {
     const data = response.data;
     console.log(data);
   }
+  */
 
+
+
+  const handlerchange = (e) => {
+    setUserlogin({
+      ...userlogin,
+      counter: counter,
+      [e.target.name]: e.target.value
+    })
+  }
+
+  const handlerSubmit = (e) => {
+    e.preventDefault();
+    console.log(userlogin);
+  }
   
 
   return (
@@ -52,6 +69,13 @@ export default function Home() {
 
          {alert? <h1>Es mayor a 10</h1> : <h1>todavía le falta</h1>}
         <button onClick={HandleClick}> click here</button>
+
+
+        <form onChange={handlerchange} onSubmit={handlerSubmit}>
+            <input type="text" name="username" />
+            <input type="text" name="password" />
+            <button type="submit"> login </button>
+        </form>
 
     </main>
   );
