@@ -1,4 +1,10 @@
+import NavbarPrincipal from "../components/navbar/NavbarPrincipal.jsx"
+
 export default function HomePage(){
-    return <h1>Home page</h1>
+    return(
+        <>
+            <NavbarPrincipal />
+        </>
+    );
 }
 
