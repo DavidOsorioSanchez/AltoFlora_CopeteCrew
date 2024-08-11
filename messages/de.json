@@ -1,0 +1,8 @@
+{
+    "navbar": {
+        "home": "Haupt",
+        "language": "Sprache",
+        "login": "Einloggen",
+        "signUp": "Anmeldung"
+    }
+}

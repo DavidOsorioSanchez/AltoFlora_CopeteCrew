@@ -1,0 +1,8 @@
+{
+    "navbar": {
+        "home": "Home",
+        "language": "Language",
+        "login": "Login",
+        "signUp": "Signup"
+    }
+}

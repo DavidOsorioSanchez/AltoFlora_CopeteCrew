@@ -1,0 +1,8 @@
+{
+    "navbar": {
+        "home": "Inicio",
+        "language": "Idioma",
+        "login": "Iniciar sesión",
+        "signUp": "Registrarse"
+    }
+}
