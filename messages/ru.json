@@ -1,8 +1,13 @@
 {
-    "navbar": {
-        "home": "Главная",
-        "language": "Язык",
-        "login": "вход",
-        "signUp": "Регистрация"
-    }
+  "navbar": {
+    "home": "Главная",
+    "language": "Язык",
+    "login": "вход",
+    "signUp": "Регистрация"
+  },
+  "LocaleSwitcher": {
+    "label": "Изменить язык",
+    "locale": "{locale, select, de {Deutsch} en {English} es {Español} po {português} fr {Français} ru {Русский} other {Unknown}}"
+  },
+  "title": ""
 }

@@ -1,5 +1,5 @@
 import SvgIcon from "@mui/material/SvgIcon";
-export default function IconNavbar({ props, path1, path2 }) {
+export default function Icons({ props, path1, path2 }) {
   return (
     <SvgIcon {...props}>
       <path d={path1} />

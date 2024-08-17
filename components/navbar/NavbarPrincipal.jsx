@@ -3,38 +3,27 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Link,
 } from "@nextui-org/react";
-import Image from "next/image";
-import IconNavbar from "./IconNavbar";
+
+import Icons from "./.././Icons";
 import ButtonNavbarContained from "./ButtonNavbarcontained";
 import ButtonNavbarOutlined from "./ButtonNavbarOutlined";
+import { Link } from "../../navigation";
+import { getLocale } from "next-intl/server";
+//import NavbarLocaleSwicher from '../localeSwitcher/NavbarLocaleSwitcherer';
 
-
-export default function NavbarPrincipal({home, login}) {
-
+export default async function NavbarPrincipal({home, login}) {
+  const lang = await getLocale();
   return (
-    <Navbar className="bg-blackest shadow-large">
-      <NavbarBrand justify="start">
-        <Image
-          src="https://images.vexels.com/media/users/3/206486/isolated/preview/98aa8797614f462e0035b129115fcae9-letra-del-alfabeto-floral-a.png"
-          alt="AltoFlora"
-          height={35}
-          width={35}
-          priority
-        />
-        <p className="font-bold font-sarabun text-4xl text-white text-inherit">
-          ltoFlora
-        </p>
-      </NavbarBrand>
+    <Navbar className="bg-lessBlack ">
       <NavbarContent justify="end">
         <NavbarItem>
-          <Link href="/dashboard">
+          <Link href={`${lang}/dashboard`} >
             <ButtonNavbarContained
               
               text={home}
               icon={
-                <IconNavbar
+                <Icons
                   path1={
                     "M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z"
                   }
@@ -47,17 +36,21 @@ export default function NavbarPrincipal({home, login}) {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="/login">
+          <Link href={`${lang}/login`} >
             <ButtonNavbarOutlined
               textOUT={login}
               iconOUT={
-                <IconNavbar
+                <Icons
                   path1={"M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" }
                 />
               }
             />
           </Link>
-        </NavbarItem>
+        </NavbarItem>   
+        <NavbarItem>
+          {/* <NavbarLocaleSwicher/> */}
+
+        </NavbarItem> 
       </NavbarContent>
     </Navbar>
   );

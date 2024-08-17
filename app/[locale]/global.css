@@ -10,3 +10,12 @@
 #76ABAE
 #eeeeee 
 */
+
+:root {
+    --color-primary: #222831;
+    --color-secondary: #31363F;
+    --color-tertiary: #76ABAE;
+    --color-quaternary: #eeeeee;
+    
+    overflow: hidden;
+}

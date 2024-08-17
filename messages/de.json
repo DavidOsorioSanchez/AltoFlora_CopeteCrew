@@ -4,5 +4,9 @@
         "language": "Sprache",
         "login": "Einloggen",
         "signUp": "Anmeldung"
+    },
+    "LocaleSwitcher": {
+        "label": "Sprache ändern",
+        "locale": "{locale, select, de {Deutsch} en {English} es {Español} po {português} fr {Français} ru {Русский} other {Unknown}}"
     }
 }
