@@ -17,5 +17,5 @@
     --color-tertiary: #76ABAE;
     --color-quaternary: #eeeeee;
     
-    overflow: hidden;
+    overflow-x: hidden;
 }

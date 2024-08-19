@@ -5,6 +5,12 @@
         "login": "Iniciar sessão",
         "signUp": "Registo"
     },
+    "landingPage": {
+        "main":{
+            "download": "Descargar",
+            "tutorial": "Tutorial"
+        }
+    },
     "LocaleSwitcher": {
         "label": "Alterar a língua",
         "locale": "{locale, select, de {Deutsch} en {English} es {Español} po {português} fr {Français} ru {Русский} other {Unknown}}"

@@ -1,27 +1,26 @@
 import {
   Navbar,
-  NavbarBrand,
   NavbarContent,
   NavbarItem,
 } from "@nextui-org/react";
 
-import Icons from "./.././Icons";
-import ButtonNavbarContained from "./ButtonNavbarcontained";
-import ButtonNavbarOutlined from "./ButtonNavbarOutlined";
+import Icons from "../Icons";
+import GenericButton from "../GenericButton";
 import { Link } from "../../navigation";
-import { getLocale } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 //import NavbarLocaleSwicher from '../localeSwitcher/NavbarLocaleSwitcherer';
 
-export default async function NavbarPrincipal({home, login}) {
+export default async function NavbarPrincipal() {
+  const t = await getTranslations('navbar');
   const lang = await getLocale();
   return (
-    <Navbar className="bg-lessBlack ">
+    <Navbar className="bg-lessBlack" position="static" >
       <NavbarContent justify="end">
         <NavbarItem>
           <Link href={`${lang}/dashboard`} >
-            <ButtonNavbarContained
-              
-              text={home}
+            <GenericButton
+              variant="contained"
+              text={t("home")}
               icon={
                 <Icons
                   path1={
@@ -32,18 +31,30 @@ export default async function NavbarPrincipal({home, login}) {
                   }
                 />
               }
+              textColor="#31363F"
+              backgroundColor="#eeeeee"
+              textBold="bold"
+
+              hoverBackgroundColor="#76ABAE"
+              hoverTextColor="#eeeeee"
             />
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link href={`${lang}/login`} >
-            <ButtonNavbarOutlined
-              textOUT={login}
-              iconOUT={
+            <GenericButton
+              variant="outlined"
+              text={t("login")}
+              icon={
                 <Icons
                   path1={"M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" }
                 />
               }
+              borderColor="#eeeeee"
+              textColor="#eeeeee"
+              textBold="bold"
+              hoverBorderColor="#76ABAE"
+              hoverTextColor="#76ABAE"
             />
           </Link>
         </NavbarItem>   

@@ -19,7 +19,8 @@ module.exports = {
       blackest: "#222831",
       white: "#eeeeee",
       lessBlack: "#31363F",
-      transparente: "##ffffff00",
+      crimson: "#DC143C",
+      transparente: "#ffffff00",
     },
     boxShadow: {
       'underBox': '0px 15px 0px 0px #2f333b8f',
