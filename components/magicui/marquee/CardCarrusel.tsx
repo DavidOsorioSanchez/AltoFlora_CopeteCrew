@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, CardFooter, Image, } from "@nextui-org/react";
-import { cn } from "@/lib/utils";
+import cn from "@/lib/utils";
 
 interface Props {
     title: string;
