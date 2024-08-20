@@ -1,6 +1,6 @@
 import { NextUIProvider } from "@nextui-org/react"
 import "./global.css"
-import { montserrat, sarabun } from "../../fonts/fonts.js"
+import { montserrat, sarabun } from "@/fonts/fonts.js"
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 

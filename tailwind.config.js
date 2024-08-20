@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const { dark } = require('@mui/material/styles/createPalette');
 const {nextui} = require("@nextui-org/react");
 
 module.exports = {
@@ -10,16 +11,31 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        
+      animation: {
+        marquee: "marquee var(--duration) linear infinite",
+        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
+        "marquee-vertical": {
+          from: { transform: "translateY(0)" },
+          to: { transform: "translateY(calc(-100% - var(--gap)))" },
+        },
       },
     },
     colors: {
-      blue: "#76ABAE",
-      blackest: "#222831",
       white: "#eeeeee",
+      blackest: "#222831",
       lessBlack: "#31363F",
       crimson: "#DC143C",
+      darkCrimson: "#8B0000",
+      blue: "#76ABAE",
+      mint: "#0E8388",
+      yellow: "#E9B824",
+      darkYellow: "#EE9322",
       transparente: "#ffffff00",
     },
     boxShadow: {

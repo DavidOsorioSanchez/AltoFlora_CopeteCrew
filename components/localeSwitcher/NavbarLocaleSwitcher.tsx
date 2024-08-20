@@ -1,6 +1,6 @@
 import {getLocale, getTranslations} from 'next-intl/server';
 import LocaleSwitcherSelect from './LocaleSwitcherSelect';
-import {locales} from '../../i18n';
+import {locales} from '@/i18n';
 
 export default async function NavbarLocaleSwitcher() {
   const t = await getTranslations('LocaleSwitcher');
