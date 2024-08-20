@@ -8,6 +8,27 @@
         "main":{
             "download": "Descargar",
             "tutorial": "Tutorial"
+        },
+        "marquee":{
+            "shop":{
+                "title": "Tienda",
+                "description": "Un lugar donde los entrenadores compran suministros y se compran Pokémon entre ellos."
+            },
+            "pokedex":{
+                "description": "Donde puedes encontrar todos los Pokémon, sus estadísticas y modelos."
+            },
+            "user":{
+                "title": "Usuario",
+                "description": "Donde puedes encontrar tu perfil, información y tus Pokémon."
+            },
+            "information":{
+                "title": "Información",
+                "description": "Donde puedes encontrar información sobre el juego."
+            },
+            "tutorial":{
+                "title": "Tutorial",
+                "description": "Donde puedes aprender a jugar el juego y nuevos mecánicos."
+            }
         }
     },
     "LocaleSwitcher": {

@@ -18,11 +18,7 @@ export default function CardCarrusel({
     return (
         <figure
             className={cn(
-                "relative min-w-[20rem] cursor-pointer overflow-hidden rounded-xl border p-4",
-                // light styles
-                "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-                // dark styles
-                "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
+                "relative min-w-[20rem] cursor-pointer overflow-hidden rounded-xl",
             )}
         >
             <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7">
@@ -32,16 +28,16 @@ export default function CardCarrusel({
                     className="z-0 w-full h-full object-cover"
                     src={img}
                 />
-                <CardFooter className="absolute min-h-[100px] bg-black/40 bottom-0 z-10 border-t-1 border-default-600">
-                    <div className="flex flex-grow gap-2 items-center">
+                <CardFooter className="absolute min-h-[100px] text-white bottom-0 z-10 border-t-1 bg-blackest/80 border-default-600">
+                    <div className="flex flex-grow gap-2  items-center">
                         <Image
                             alt="Breathing app icon"
-                            className="rounded-full w-10 h-11 bg-black"
+                            className="w-12 h-12 object-cover bg-black"
                             src={icon}
                         />
                         <div className="flex flex-col">
-                            <p className="text-tiny text-white/60">{title}</p>
-                            <p className="text-tiny text-white/60">{description}</p>
+                            <p className="font-semibold text-medium text-white">{title}</p>
+                            <p className="text-tiny text-white/80 line-clamp-2 text-wrap">{description}</p>
                         </div>
                     </div>
                 </CardFooter>

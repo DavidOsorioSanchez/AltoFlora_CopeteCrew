@@ -13,10 +13,10 @@ export default async function HomePage() {
     return (
         <>
             <NavbarPrincipal />
-            <main className="w-screen min-h-screen overflow-hidden flex flex-col justify-center items-center">
+            <main className="w-screen min-h-screen overflow-hidden flex flex-col gap-40 justify-center items-center md:gap-4">
                 {/* portada */}
-                <div className="w-full h-screen overflow-hidden flex justify-center items-center">
-                    <div className="w-full max-w-1/2 h-auto flex flex-col gap-4">
+                <div className="w-full h-screen overflow-hidden flex flex-wrap-reverse justify-center  items-center md:flex-nowrap">
+                    <div className="w-full max-w-1/2 h-auto flex flex-col gap-0 md:gap-4">
                         <div className="w-full max-w-1/2 h-full flex justify-center items-center ">
                             <Image
                                 src="https://i.imgur.com/Tt6QQCT.png"
