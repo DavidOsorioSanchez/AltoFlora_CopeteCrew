@@ -18,4 +18,7 @@
     --color-quaternary: #eeeeee;
     
     overflow-x: hidden;
+    scrollbar-color: var(--color-quaternary) var(--color-primary);
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
 }

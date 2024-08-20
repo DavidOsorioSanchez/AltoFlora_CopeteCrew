@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardFooter, Image, } from "@nextui-org/react";
+import { Card, CardFooter, Image } from "@nextui-org/react";
 import cn from "@/lib/utils";
 
 interface Props {
@@ -18,7 +18,7 @@ export default function CardCarrusel({
     return (
         <figure
             className={cn(
-                "relative min-w-[20rem] cursor-pointer overflow-hidden rounded-xl",
+                "relative min-w-[25rem] max-w-[35rem] cursor-pointer overflow-hidden rounded-xl",
             )}
         >
             <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7">

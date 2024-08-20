@@ -3,10 +3,10 @@ import { getTranslations } from 'next-intl/server';
 import GenericButton from "@/components/mui/GenericButton";
 //import Icons from "@/components/mui/Icons";
 //import Waiting from "@/components/mui/Waiting.tsx";
-import NavbarPrincipal from "@/components/navbar/NavbarPrincipal.jsx"
+import NavbarPrincipal from "@/components/page/navbar/NavbarPrincipal.jsx"
+import Footer from "@/components/page/footer/Footer.tsx"
 import Model from '@/components/Modelo3D/Model.tsx';
 import Image from "next/image";
-import { Link } from "@/navigation";
 import { MyCarrusel } from "@/components/magicui/marquee/MyCarrusel.tsx";
 export default async function HomePage() {
     const t = await getTranslations('');
@@ -67,7 +67,7 @@ export default async function HomePage() {
                 {/* carrusel */}
                 <MyCarrusel />
             </main>
-
+            <Footer />
         </>
     );
 }

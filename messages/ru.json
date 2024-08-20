@@ -1,38 +1,41 @@
 {
-  "navbar": {
-    "language": "Язык",
-    "login": "вход",
-    "signUp": "Регистрация"
-  },
-  "landingPage": {
-        "main":{
+    "navbar": {
+        "language": "Язык",
+        "login": "вход",
+        "signUp": "Регистрация"
+    },
+    "landingPage": {
+        "main": {
             "download": "Скачать",
             "tutorial": "Туториал"
         },
-        "marquee":{
-            "shop":{
+        "marquee": {
+            "shop": {
                 "title": "Магазин",
                 "description": "Место, где тренеры покупают предметы и покупают Pokémon с других."
             },
-            "pokedex":{
+            "pokedex": {
                 "description": "Где вы можете найти все Pokémon, их статистику и модели."
             },
-            "user":{
+            "user": {
                 "title": "Пользователь",
                 "description": "Где вы можете найти свой профиль, информацию и свои Pokémon."
             },
-            "information":{
+            "information": {
                 "title": "Информация",
                 "description": "Где вы можете найти информацию о игре."
             },
-            "tutorial":{
+            "tutorial": {
                 "title": "Туториал",
                 "description": "Где вы можете узнать, как играть и новые механики."
             }
         }
     },
-  "LocaleSwitcher": {
-    "label": "Изменить язык",
-    "locale": "{locale, select, de {Deutsch} en {English} es {Español} po {português} fr {Français} ru {Русский} other {Unknown}}"
-  }
+    "LocaleSwitcher": {
+        "label": "Изменить язык",
+        "locale": "{locale, select, de {Deutsch} en {English} es {Español} po {português} fr {Français} ru {Русский} other {Unknown}}"
+    },
+    "footer": {
+        "copyright": "© 2023 Все права защищены AltoFlora"
+    }
 }

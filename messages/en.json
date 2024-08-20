@@ -34,5 +34,8 @@
     "LocaleSwitcher": {
         "label": "Change language",
         "locale": "{locale, select, de {Deutsch} en {English} es {Español} po {português} fr {Français} ru {Русский} other {Unknown}}"
-    }
+    },
+    "footer": {
+        "copyright": "© 2023 All Rights Reserved AltoFlora"
+    }    
 }
