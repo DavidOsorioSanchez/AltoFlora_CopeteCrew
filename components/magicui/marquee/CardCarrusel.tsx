@@ -32,7 +32,7 @@ export default function CardCarrusel({
                     <div className="flex flex-grow gap-2  items-center">
                         <Image
                             alt="Breathing app icon"
-                            className="w-12 h-12 object-cover bg-black"
+                            className="radius-none h-12 w-14 p-1 object-cover "
                             src={icon}
                         />
                         <div className="flex flex-col">

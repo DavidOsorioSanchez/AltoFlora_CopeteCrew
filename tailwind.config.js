@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-const { dark } = require('@mui/material/styles/createPalette');
 const {nextui} = require("@nextui-org/react");
 
 module.exports = {
