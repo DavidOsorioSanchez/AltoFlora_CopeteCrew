@@ -5,6 +5,7 @@ import GenericButton from "@/components/mui/GenericButton";
 //import Waiting from "@/components/mui/Waiting.tsx";
 import NavbarPrincipal from "@/components/page/navbar/NavbarPrincipal.jsx"
 import Footer from "@/components/page/footer/Footer.tsx"
+import About from "@/components/page/About/About.tsx";
 import Model from '@/components/Modelo3D/Model.tsx';
 import Image from "next/image";
 import { MyCarrusel } from "@/components/magicui/marquee/MyCarrusel.tsx";
@@ -66,7 +67,11 @@ export default async function HomePage() {
                 </div>
                 {/* carrusel */}
                 <MyCarrusel />
+                <About />
             </main>
+            
+
+
             <Footer />
         </>
     );
