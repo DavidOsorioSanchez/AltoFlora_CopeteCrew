@@ -4,7 +4,7 @@ import Spline from '@splinetool/react-spline/next';
 interface Props {
     Url: string;
     className: string;
-    suspense: any;
+    suspense?: any;
 }
 
 export default function Home({Url: Url, className: className, suspense: suspense}: Props) {

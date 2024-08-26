@@ -7,7 +7,8 @@
     "landingPage": {
         "main": {
             "download": "Скачать",
-            "tutorial": "Туториал"
+            "tutorial": "Туториал",
+            "version" : "Версия"
         },
         "marquee": {
             "shop": {

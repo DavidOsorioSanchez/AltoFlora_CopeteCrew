@@ -8,7 +8,7 @@ import Icons from "@/components/mui/Icons";
 import GenericButton from "@/components/mui/GenericButton";
 import { Link } from "@/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
-//import NavbarLocaleSwicher from '../localeSwitcher/NavbarLocaleSwitcherer';
+//import NavbarLocaleSwicher from '@/components/localeSwitcher/NavbarLocaleSwitcher';
 
 export default async function NavbarPrincipal() {
   const t = await getTranslations('navbar');
@@ -17,7 +17,7 @@ export default async function NavbarPrincipal() {
     <Navbar className="bg-lessBlack" position="static" >
       <NavbarContent justify="end">
         <NavbarItem>
-          <Link href={`${lang}/dashboard`} >
+          <Link href="/register/singup">
             <GenericButton
               variant="outlined"
               text={t("signUp")}
@@ -36,7 +36,7 @@ export default async function NavbarPrincipal() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href={`${lang}/login`} >
+          <Link href="/register/login">
             <GenericButton
               variant="outlined"
               text={t("login")}
@@ -54,8 +54,7 @@ export default async function NavbarPrincipal() {
           </Link>
         </NavbarItem>   
         <NavbarItem>
-          {/* <NavbarLocaleSwicher/> */}
-
+          {/* <NavbarLocaleSwicher/>  */}
         </NavbarItem> 
       </NavbarContent>
     </Navbar>

@@ -1,3 +1,4 @@
+'use client';
 import ButtonMUI from '@mui/material/Button';
 
 interface Props {
@@ -21,6 +22,7 @@ interface Props {
     hoverBorderColor?: string;
     hoverBackgroundColor?: string;
     hoverTextColor?: string;
+
 }
 
 
@@ -44,28 +46,28 @@ export default function GenericButton({
     hoverBorderColor,
 }: Props) {
     return (
-        <ButtonMUI
-            variant={variant}
-            startIcon={icon}
-            className={className}
-            sx={{
-                width: width,
-                height: height,
-                minWidth: minWidth,
-                borderRadius: Radius,
-                color: textColor,
-                backgroundColor: backgroundColor,
-                borderColor: borderColor,
-                fontWeight: textBold,
-                boxShadow: boxShadow,
-                '&:hover': {
-                    backgroundColor: hoverBackgroundColor,
-                    borderColor: hoverBorderColor,
-                    color: hoverTextColor,
-                    boxShadow: hoverBoxShadow,
-                },
-            }}>
-            {text}
-        </ButtonMUI>
+            <ButtonMUI
+                variant={variant}
+                startIcon={icon}
+                className={className}
+                sx={{
+                    width: width,
+                    height: height,
+                    minWidth: minWidth,
+                    borderRadius: Radius,
+                    color: textColor,
+                    backgroundColor: backgroundColor,
+                    borderColor: borderColor,
+                    fontWeight: textBold,
+                    boxShadow: boxShadow,
+                    '&:hover': {
+                        backgroundColor: hoverBackgroundColor,
+                        borderColor: hoverBorderColor,
+                        color: hoverTextColor,
+                        boxShadow: hoverBoxShadow,
+                    },
+                }}>
+                {text}
+            </ButtonMUI>
     );
 }
