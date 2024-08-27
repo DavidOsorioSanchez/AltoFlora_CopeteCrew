@@ -1,7 +1,9 @@
+
 /** @type {import('tailwindcss').Config} */
 const {nextui} = require("@nextui-org/react");
 
 module.exports = {
+  darkMode: ["class"],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,6 +12,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      container: {
+        center: true,
+        padding: "2rem",
+        screens: {
+          "2xl": "1400px",
+        },
+      },
       animation: {
         marquee: "marquee var(--duration) linear infinite",
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
@@ -41,6 +50,6 @@ module.exports = {
       'underBox': '0px 15px 0px 0px #2f333b8f',
     }
   },
-  darkMode: "class",
-  plugins: [nextui()],
-};
+  plugins: [nextui(), require("tailwindcss-animate")],
+
+}

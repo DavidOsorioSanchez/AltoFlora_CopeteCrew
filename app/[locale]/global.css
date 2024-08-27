@@ -1,24 +1,4 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-
-/* paleta de colores:
-#222831
-#31363F
-#76ABAE
-#eeeeee 
-*/
-
-:root {
-    --color-primary: #222831;
-    --color-secondary: #31363F;
-    --color-tertiary: #76ABAE;
-    --color-quaternary: #eeeeee;
-    
-    overflow-x: hidden;
-    scrollbar-color: var(--color-quaternary) var(--color-primary);
-    scrollbar-width: thin;
-    scroll-behavior: smooth;
-}
+  
