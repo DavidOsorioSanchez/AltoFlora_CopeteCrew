@@ -33,7 +33,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "i18n.ts", "lib/utils", "app/[locale]/page.jsx", "app/[locale]/layout.jsx", "components/Modelo3D/Model.tsx"  ],
+, "i18n.ts", "lib/utils.ts", "app/[locale]/page.jsx", "app/[locale]/layout.jsx", "components/Modelo3D/Model.tsx"  ],
   "exclude": [
     "node_modules" 
   ]
