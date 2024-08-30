@@ -1,7 +1,7 @@
 import React  from "react";
 import { Card, CardFooter, Image } from "@nextui-org/react";
 import cn from "@/lib/utils";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
 interface Props {
     title: string;
@@ -11,14 +11,14 @@ interface Props {
     available: boolean;
 }
 
-export default async function CardCarrusel({
+export default function CardCarrusel({
     title,
     img,
     icon,
     description,
     available,
 }: Props){
-    const t = await getTranslations("");
+    const t = useTranslations('cardCarrusel');
     return (
         <figure
             className={cn(

@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
-export default async function About() {
-    const t = await getTranslations("about");
+export default function About() {
+    const t = useTranslations("about");
     return (
         <div className="w-full h-full flex flex-col gap-4 justify-around items-center md:flex-row">
             <Image

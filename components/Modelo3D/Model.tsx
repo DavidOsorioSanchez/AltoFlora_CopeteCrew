@@ -1,18 +1,16 @@
 import React, { Suspense } from 'react';
-import Spline from '@splinetool/react-spline/next';
+
+const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
 interface Props {
     Url: string;
-    className: string;
-    suspense?: any;
+    fallback?: React.ReactNode;
 }
 
-export default function Home({Url: Url, className: className, suspense: suspense}: Props) {
+export default function Model({Url, fallback}:Props) {
     return (
-        <main>
-            <Spline Suspense={suspense}  className={className}
-                scene={Url}
-            />
-        </main>
+            <Suspense fallback={fallback}>
+                <Spline scene={"https://" + Url} />
+            </Suspense>
     );
 }

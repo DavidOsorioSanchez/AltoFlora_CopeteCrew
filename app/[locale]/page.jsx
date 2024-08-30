@@ -19,9 +19,6 @@ export default function HomePage() {
                 <MyCarrusel />
                 <About />
             </main>
-            
-
-
             <Footer />
         </>
     );

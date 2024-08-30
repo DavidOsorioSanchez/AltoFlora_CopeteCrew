@@ -39,7 +39,9 @@
     "footer": {
         "copyright": "© 2023 Tous droits réservés AltoFlora"
     },
-    "notAvailable": "Non disponible",
+    "cardCarrusel": {
+        "notAvailable": "Non disponible"
+    },
     "about": {
         "title": "Explorer AltoFlora!",
         "description": " Un nouveau monde te attend dans Minecraft avec Cobblemon. Découvrez une région unique, capturez des Pokémon exclusifs et rejoignez une communauté d'entraîneurs. Construisez, combattez et deviennez le meilleur. Ne perdez pas cette aventure épique."

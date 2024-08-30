@@ -3,11 +3,11 @@ import Image from "next/image";
 import { Link } from "@/navigation";
 import GenericButton from "@/components/mui/GenericButton";
 import DownloadZipButton from "@/components/componentsDownload/DownloadZipButton";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 import MyImagen from "@/public/LogoAltoFlora.png";
 
-export default async function Main() {
-    const t = await getTranslations('landingPage');
+export default function Main() {
+    const t = useTranslations('landingPage');
     return (
         <div className="w-full h-screen overflow-hidden flex flex-wrap-reverse justify-center  items-center md:flex-nowrap">
             <div className="w-full max-w-1/2 h-auto flex flex-col p-4 gap-0 md:gap-4">
@@ -31,7 +31,7 @@ export default async function Main() {
                         zipFileName='AltoFloraMods.zip'
                         text={t('main.download')}
                     />
-                    <Link href="/information" passHref>
+                    <Link href="/dashboard" passHref>
                         <GenericButton
                             variant="contained"
                             text={t('main.tutorial')}
@@ -50,7 +50,7 @@ export default async function Main() {
 
                 </div>
             </div>
-                <Model className="h-full min-h-[40rem] min-w-[40rem] " Url="https://prod.spline.design/xxyp3g4mlgx5v6KD/scene.splinecode" />
+                <Model Url="prod.spline.design/xxyp3g4mlgx5v6KD/scene.splinecode" />
         </div>
     );
 }

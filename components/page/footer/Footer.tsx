@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { getTranslations } from 'next-intl/server';
+import { useTranslations } from 'next-intl';
 
-export default async function Footer() {
-    const t = await getTranslations('');
+export default function Footer() {
+    const t = useTranslations('footer');
     return (
         <footer className="w-full h-auto flex justify-around items-center gap-4 mt-6 bg-blackest text-white">
-            <p>{t('footer.copyright')}</p>
+            <p>{t('copyright')}</p>
             <div className="w-auto flex justify-center items-center gap-4 p-4">
                 <Link href="https://www.tiktok.com/@tiktok.com" target="_blank" rel="noreferrer">
                     <Image src="https://i.imgur.com/hDw7gZi.png" alt="Tiktok" className="rounded-full p-2 bg-white hover:animate-pulse" width="40" height="40" />

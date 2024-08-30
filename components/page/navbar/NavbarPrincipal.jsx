@@ -7,12 +7,11 @@ import {
 import Icons from "@/components/mui/Icons";
 import GenericButton from "@/components/mui/GenericButton";
 import { Link } from "@/navigation";
-import { getLocale, getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 //import NavbarLocaleSwicher from '@/components/localeSwitcher/NavbarLocaleSwitcher';
 
-export default async function NavbarPrincipal() {
-  const t = await getTranslations('navbar');
-  const lang = await getLocale();
+export default function NavbarPrincipal() {
+  const t = useTranslations('navbar');
   return (
     <Navbar className="bg-lessBlack" position="static" >
       <NavbarContent justify="end">

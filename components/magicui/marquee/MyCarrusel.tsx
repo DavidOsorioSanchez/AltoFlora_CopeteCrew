@@ -1,9 +1,10 @@
 import Marquee from "@/components/magicui/marquee/Marquee";
 import CardCarrusel from "./CardCarrusel";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
-export async function MyCarrusel() {
-    const t = await getTranslations("landingPage");
+export function MyCarrusel() {
+    
+    const t = useTranslations("landingPage");
     return (
         <div className="relative flex h-auto w-full flex-col items-center justify-center overflow-hidden rounded-lg md:shadow-xl">
             <Marquee pauseOnHover  className="[--duration:30s]">
