@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Link } from "@/navigation";
 import GenericButton from "@/components/mui/GenericButton";
 import DownloadZipButton from "@/components/componentsDownload/DownloadZipButton";
+import {CoolModeCustom} from "@/components/magicui/coolMode/CoolModeCustom";
 import { useTranslations } from "next-intl";
 import MyImagen from "@/public/LogoAltoFlora.png";
 
@@ -12,25 +13,26 @@ export default function Main() {
         <div className="w-full h-screen overflow-hidden flex flex-wrap-reverse justify-center  items-center md:flex-nowrap">
             <div className="w-full max-w-1/2 h-auto flex flex-col p-4 gap-0 md:gap-4">
                 <div className="w-full max-w-1/2 h-full flex flex-col">
-                    <div className="w-full h-full flex justify-center items-center ">
-                        <Image
-                            src={MyImagen}
-                            alt="AltoFlora"
-                            height={505}
-                            width={505}
-                            priority
-                        />
-                    </div>
-                    <p className="font-light font-sarabun text-medium text-white/70 text-inherit text-center">
-                        Minecraft: Java Edition • {t('main.version')}: 1.20.1
-                    </p>
-
+                    <CoolModeCustom>
+                        <div className="w-full h-full flex justify-center items-center ">
+                            <Image
+                                src={MyImagen}
+                                alt="AltoFlora"
+                                height={505}
+                                width={505}
+                                priority
+                            />
+                        </div>
+                    </CoolModeCustom>
+                        <p className="w-auto h-auto font-light font-sarabun text-medium text-white/70 text-inherit text-center">
+                            Minecraft: Java Edition • {t('main.version')}: 1.20.1
+                        </p>
                 </div>
                 <div className="w-full h-full flex justify-center items-center gap-4">
-                    <DownloadZipButton
-                        zipFileName='AltoFloraMods.zip'
-                        text={t('main.download')}
-                    />
+                        <DownloadZipButton
+                            zipFileName='AltoFloraMods.zip'
+                            text={t('main.download')}
+                        />
                     <Link href="/dashboard" passHref>
                         <GenericButton
                             variant="contained"
