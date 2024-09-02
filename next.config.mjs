@@ -12,6 +12,6 @@ const nextConfig = {
             { hostname: 'i.pinimg.com' },
             { hostname: 'upload.wikimedia.org' },
         ],
-    },
+    }
 };
 export default nextIntlPlugin(nextConfig);
