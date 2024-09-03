@@ -8,7 +8,7 @@ import Icons from "@/components/mui/Icons";
 import GenericButton from "@/components/mui/GenericButton";
 import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
-//import NavbarLocaleSwicher from '@/components/localeSwitcher/NavbarLocaleSwitcher';
+import LocaleSwitcher from '@/components/localeSwitcher/LocaleSwitcherSelect';
 
 export default function NavbarPrincipal() {
   const t = useTranslations('navbar');
@@ -53,7 +53,7 @@ export default function NavbarPrincipal() {
           </Link>
         </NavbarItem>   
         <NavbarItem>
-          {/* <NavbarLocaleSwicher/>  */}
+          <LocaleSwitcher/>
         </NavbarItem> 
       </NavbarContent>
     </Navbar>

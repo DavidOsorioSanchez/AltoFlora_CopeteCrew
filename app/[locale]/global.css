@@ -41,3 +41,40 @@
 ::-webkit-scrollbar-button {
     display: none;
 }
+
+
+/* localeSwitcher */
+
+.myOption{
+    background-color: var(--myBlackest) !important;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.myOption:checked{
+    background-color: var(--myMint) !important;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.myOption:disabled{
+    background-color: transparent !important;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.myFormControl{
+    color: var(--myWhite);
+    padding: 0px;
+    min-width: 120px;
+    max-width: 300px;
+
+}
+
+.MuiSvgIcon-root .MuiSvgIcon-fontSizeMedium .MuiNativeSelect-icon .MuiNativeSelect-iconOutlined .css-1g12qau-MuiSvgIcon-root-MuiNativeSelect-icon{
+    filter : invert(1);
+}
+
+.myInputLabel{
+    color: var(--myWhite) !important;
+}

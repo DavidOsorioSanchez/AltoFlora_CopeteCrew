@@ -32,9 +32,9 @@
             }
         }
     },
-    "LocaleSwitcher": {
-        "label": "Alterar a língua",
-        "locale": "{locale, select, de {Deutsch} en {English} es {Español} po {português} fr {Français} ru {Русский} other {Unknown}}"
+    "localeSwitcher": {
+        "label": "🗺️ Alterar a língua",
+        "locale": "{locale, select, de {🌍🇩🇪 Deutsch} en {🌎🇺🇸 English} es {🌎🇨🇴 Español} fr {🌍🇫🇷 Français} ru {🌏🇷🇺 Русский} other {🌎🇧🇷 português}}"
     },
     "footer": {
         "copyright": "© 2023 Todos os direitos reservados AltoFlora"

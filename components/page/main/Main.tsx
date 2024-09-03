@@ -52,7 +52,7 @@ export default function Main() {
 
                 </div>
             </div>
-                <Model Url="prod.spline.design/xxyp3g4mlgx5v6KD/scene.splinecode" />
+                <Model className="hidden md:block" Url="prod.spline.design/xxyp3g4mlgx5v6KD/scene.splinecode" />
         </div>
     );
 }
