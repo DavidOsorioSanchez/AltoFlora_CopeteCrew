@@ -47,6 +47,7 @@ export default function Main() {
                             hoverBackgroundColor='#E9B824'
                             textBold='bold'
                             textColor='#eeeeee'
+                            disabled
                         />
                     </Link>
 
