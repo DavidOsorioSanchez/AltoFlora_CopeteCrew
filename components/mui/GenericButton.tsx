@@ -22,7 +22,9 @@ interface Props {
     hoverBorderColor?: string;
     hoverBackgroundColor?: string;
     hoverTextColor?: string;
-
+    
+    //disabled
+    disabled?: boolean;
 }
 
 
@@ -44,12 +46,14 @@ export default function GenericButton({
     hoverBackgroundColor,
     hoverTextColor,
     hoverBorderColor,
+    disabled,
 }: Props) {
     return (
             <ButtonMUI
                 variant={variant}
                 startIcon={icon}
                 className={className}
+                
                 sx={{
                     width: width,
                     height: height,
@@ -66,7 +70,9 @@ export default function GenericButton({
                         color: hoverTextColor,
                         boxShadow: hoverBoxShadow,
                     },
-                }}>
+                }}
+                disabled={disabled}
+                >
                 {text}
             </ButtonMUI>
     );
