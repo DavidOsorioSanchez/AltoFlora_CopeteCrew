@@ -16,6 +16,7 @@ interface Props {
     icon?: any;
     boxShadow?: string;
     borderColor?: string;
+    display?: string;
 
     // Hover
     hoverBoxShadow?: string;
@@ -25,6 +26,9 @@ interface Props {
     
     //disabled
     disabled?: boolean;
+
+    // Link
+    href?: string;
 }
 
 
@@ -42,24 +46,27 @@ export default function GenericButton({
     textBold,
     borderColor,
     boxShadow,
+    display,
     hoverBoxShadow,
     hoverBackgroundColor,
     hoverTextColor,
     hoverBorderColor,
     disabled,
+    href,
 }: Props) {
     return (
             <ButtonMUI
                 variant={variant}
                 startIcon={icon}
                 className={className}
-                
+                href={href}
                 sx={{
                     width: width,
                     height: height,
                     minWidth: minWidth,
                     borderRadius: Radius,
                     color: textColor,
+                    display: display,
                     backgroundColor: backgroundColor,
                     borderColor: borderColor,
                     fontWeight: textBold,

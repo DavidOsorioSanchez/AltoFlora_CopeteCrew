@@ -12,6 +12,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'map': 'url("/map.jpg")',
+        'auth': 'linear-gradient(90deg, rgba(0,0,0,0) 45%, rgba(49,54,63,0.70) 50%)',
+      },
       container: {
         center: true,
         padding: "2rem",

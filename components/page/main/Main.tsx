@@ -33,7 +33,7 @@ export default function Main() {
                             zipFileName='AltoFloraMods.zip'
                             text={t('main.download')}
                         />
-                    <Link href="/dashboard" passHref>
+                    <Link href="/auth/register" passHref>
                         <GenericButton
                             variant="contained"
                             text={t('main.tutorial')}
@@ -47,7 +47,6 @@ export default function Main() {
                             hoverBackgroundColor='#E9B824'
                             textBold='bold'
                             textColor='#eeeeee'
-                            disabled
                         />
                     </Link>
 
