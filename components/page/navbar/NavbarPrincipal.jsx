@@ -4,11 +4,10 @@ import {
   NavbarItem,
 } from "@nextui-org/react";
 
-import Icons from "@/components/mui/Icons";
-import GenericButton from "@/components/mui/GenericButton";
+import GenericButton from "@mui/GenericButton";
 import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
-import LocaleSwitcher from '@/components/localeSwitcher/LocaleSwitcherSelect';
+import LocaleSwitcher from '@otherComp/localeSwitcher/LocaleSwitcherSelect';
 
 export default function NavbarPrincipal() {
   const t = useTranslations('navbar');
@@ -16,7 +15,7 @@ export default function NavbarPrincipal() {
     <Navbar className="bg-lessBlack" position="static" >
       <NavbarContent justify="end">
         <NavbarItem>
-          <Link href="/register/singup">
+          <Link href="/register/signup" passHref>
             <GenericButton
               variant="outlined"
               text={t("signUp")}
@@ -33,10 +32,10 @@ export default function NavbarPrincipal() {
               hoverTextColor="#76ABAE"
             />
           </Link>
-        </NavbarItem>  
+        </NavbarItem>
         <NavbarItem>
-          <LocaleSwitcher/>
-        </NavbarItem> 
+          <LocaleSwitcher />
+        </NavbarItem>
       </NavbarContent>
     </Navbar>
   );

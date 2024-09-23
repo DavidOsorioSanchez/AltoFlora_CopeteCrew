@@ -1,8 +1,8 @@
 import { redirect } from '@/navigation';
 
 export default function dashboard ( {children} ){
-    if (1 === 1) {// aqui podemos verificar si el usuario esta logeado
-        redirect('/auth/register');
+    if (!session?.user ) {
+        redirect('/register/signup');
     }
     return (
         <section className="h-full">

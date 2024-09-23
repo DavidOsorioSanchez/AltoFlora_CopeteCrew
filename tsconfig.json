@@ -4,7 +4,25 @@
     "paths": {
       "@/*": [
         "./*"
-      ]
+      ],
+      "@components/*": [
+        "./components/*"
+      ],
+      "@otherComp/*": [
+        "./components/other/*"
+      ],
+      "@mui/*": [
+        "./components/mui/*"
+      ],
+      "@magicui/*": [
+        "./components/magicui/*"
+      ],
+      "@pageComp/*": [
+        "./components/page/*"
+      ],
+      "@api/*": [
+        "./app/api/*"
+      ],
     },
     "lib": [
       "dom",
@@ -33,7 +51,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "i18n.ts", "app/[locale]/page.jsx", "app/[locale]/layout.jsx", "components/Modelo3D/Model.tsx"  ],
+, "i18n.ts", "app/[locale]/page.jsx", "app/[locale]/layout.jsx", "components/other/Modelo3D/Model.tsx"  ],
   "exclude": [
     "node_modules"
   ]

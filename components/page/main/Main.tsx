@@ -1,14 +1,15 @@
-import Model from '@/components/Modelo3D/Model';
+import Model from '@otherComp/Modelo3D/Model';
 import Image from "next/image";
 import { Link } from "@/navigation";
-import GenericButton from "@/components/mui/GenericButton";
-import DownloadZipButton from "@/components/componentsDownload/DownloadZipButton";
-import {CoolModeCustom} from "@/components/magicui/coolMode/CoolModeCustom";
+import GenericButton from "@mui/GenericButton";
+import DownloadZipButton from "@otherComp/componentsDownload/DownloadZipButton";
+import {CoolModeCustom} from "@magicui/coolMode/CoolModeCustom";
 import { useTranslations } from "next-intl";
 import MyImagen from "@/public/LogoAltoFlora.png";
 
 export default function Main() {
     const t = useTranslations('landingPage');
+
     return (
         <div className="w-full h-screen overflow-hidden flex flex-wrap-reverse justify-center  items-center md:flex-nowrap">
             <div className="w-full max-w-1/2 h-auto flex flex-col p-4 gap-0 md:gap-4">
@@ -33,7 +34,7 @@ export default function Main() {
                             zipFileName='AltoFloraMods.zip'
                             text={t('main.download')}
                         />
-                    <Link href="/auth/register" passHref>
+                    <Link href="/register/signup" passHref>
                         <GenericButton
                             variant="contained"
                             text={t('main.tutorial')}

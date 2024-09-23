@@ -1,12 +1,12 @@
 
 //import React, { lazy, Suspense } from 'react';
-//import Icons from "@/components/mui/Icons";
-//import Waiting from "@/components/mui/Waiting.tsx";
-import NavbarPrincipal from "@/components/page/navbar/NavbarPrincipal.jsx";
-import Main from "@/components/page/main/Main.tsx";
-import Footer from "@/components/page/footer/Footer.tsx";
-import About from "@/components/page/About/About.tsx";
-import { MyCarrusel } from "@/components/magicui/marquee/MyCarrusel.tsx";
+//import Icons from "@mui/Icons";
+//import Waiting from "@mui/Waiting.tsx";
+import NavbarPrincipal from "@pageComp/navbar/NavbarPrincipal.jsx";
+import Main from "@pageComp/main/Main.tsx";
+import Footer from "@pageComp/footer/Footer.tsx";
+import About from "@pageComp/About/About.tsx";
+import { MyCarrusel } from "@magicui/marquee/MyCarrusel.tsx";
 
 export default function HomePage() {
     return (

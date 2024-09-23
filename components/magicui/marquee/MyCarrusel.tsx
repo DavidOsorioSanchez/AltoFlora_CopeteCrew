@@ -1,4 +1,4 @@
-import Marquee from "@/components/magicui/marquee/Marquee";
+import Marquee from "@magicui/marquee/Marquee";
 import CardCarrusel from "./CardCarrusel";
 import { useTranslations } from "next-intl";
 

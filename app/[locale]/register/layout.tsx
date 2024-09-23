@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Map from "@/public/map.jpg";
-export default function Auth ( {children} ){
+export default function Register ( {children} ){
     return (
         <div className="h-screen w-screen relative bg-[#222287] overflow-hidden">
             <Image 

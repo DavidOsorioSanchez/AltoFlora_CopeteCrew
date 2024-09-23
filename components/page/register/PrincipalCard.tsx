@@ -1,6 +1,6 @@
 import Image from "next/image";
 import MyImagen from "@/public/LogoAltoFlora.png";
-import GenericButton from "@/components/mui/GenericButton";
+import GenericButton from "@mui/GenericButton";
 import { Link } from "@/navigation";
 
 export default function PrincipalCard() {
